@@ -11,9 +11,7 @@ def render_cell(value):
     for line in value.split("\n"):
         stripped = line.strip()
         if is_url(stripped):
-            output.append('<a href="{url}">{url}</a>'.format(
-                url=escape(url)
-            )
+            output.append('<a href="{url}">{url}</a>'.format(url=escape(stripped)))
         else:
             output.append(escape(line))
     return Markup("\n".join(output))

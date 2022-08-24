@@ -15,8 +15,18 @@ Install this plugin in the same environment as Datasette.
 
 ## Usage
 
-Usage instructions go here.
-
+Once installed, if a cell has contents like this:
+```
+https://example.com
+Not a link
+https://google.com
+```
+It will be rendered as:
+```html
+<a href="https://example.com">https://example.com</a>
+Not a link
+<a href="https://google.com">https://google.com</a>
+```
 ## Development
 
 To set up this plugin locally, first checkout the code. Then create a new virtual environment:
