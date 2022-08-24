@@ -13,6 +13,12 @@ Install this plugin in the same environment as Datasette.
 
     datasette install datasette-multiline-links
 
+## Demo
+
+Try this plugin out against a [Google Sheets spreadsheet](https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk) of previously featured datasets from [Data is Plural](https://www.data-is-plural.com/) using [Datasette Lite](https://lite.datasette.io/) here:
+
+* <a href="https://lite.datasette.io/?install=datasette-multiline-links&csv=https://docs.google.com/spreadsheets/d/1wZhPLMCHKJvwOkP4juclhjFgqIY8fQFMemwKL2c64vk/export?format=csv#/data?sql=select+edition%2C+headline%2C+text%2C+links%2C+hattips+from+export+where%0Atext+like+'%25'+||+%3Aq+||+'%25'+or+headline+like+'%25'+||+%3Aq+||+'%25'+order+by+edition+desc&q=loans">Demo this plugin in Datasette Lite</a>
+
 ## Usage
 
 Once installed, if a cell has contents like this:
